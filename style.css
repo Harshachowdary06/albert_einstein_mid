@@ -1,0 +1,392 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+/*Nav bar styling Strats from here*/
+
+.nav_bar_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+    display: block;
+}
+
+.nav_bar_list  li {
+  float: left;
+}
+
+.nav_bar_list a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav_bar_list a:hover{
+  background-color: #f2c7f4;
+  color: white;
+}
+.nav_bar_list li:not(.ho){
+  float: right;
+  color: black;
+}
+
+/*Nav bar styling ends*/
+/*About styling starts here*/
+.About{
+  height: 95vh;
+  width: inherit;
+  margin-top:80px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.About img{
+  width:400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.About p{
+  padding-top: 20px;
+}
+/*About styling ends*/
+/*Research paper styling starts here*/
+.rpap{
+  display: block;
+  height: 95vh;
+  width: inherit;
+  margin-top:80px;
+  padding-top: 20px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.rpap_box{
+  width: 400px;
+  height:250px;
+  background-color: rgb(122 231 253 / 30%);
+  margin-top: 100px;
+  margin-left: 50px;
+  border-radius: 20px;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+/*Research paper styling ends here*/
+/* Experience section styling starts here*/
+.Experience{
+  font-size: 15px;
+  display: block;
+  margin-top: 400px;
+  height:95vh;
+  padding: 100px;
+}
+.Exp h1{
+  padding: 40px;
+}
+
+.Exp_box{
+  width: 85%;
+  height: 85%;
+  margin: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
+  color: #7885a3;
+  background-color:rgba(255,0,0,0);
+  border: 2px solid black;
+}
+.Exp_box:hover{
+  width: 88%;
+  height:86%;
+  background-color: pink  ;
+}
+/* exp section styling starts here*/
+/* hobbies section styling starts here*/
+.hob{
+    font-size: 15px;
+    display: block;
+    height:95vh;
+    padding: 100px;
+}
+.hob_box{
+  width: 100%;
+  height: 90%;
+  background-color: #ffc0fb87;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
+}
+.im1 img{
+  width:499px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+.im2 img{
+  width:248px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}.im3 img{
+  width:248px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img_section{
+  width: 500px;
+  height: 505px;
+  background-color: black;
+  margin-left: 30%;
+}
+
+/* hobbies section styling starts here*/
+/* Blogs section styling starts here*/
+.Blogs{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+  justify-content: center;
+}
+.Blogs h1{
+  padding: 50px;
+}
+.blog_box{
+  width: 400px;
+  height:250px;
+  background-color: rgb(63 255 133 / 53%);
+  margin-top: 200px;
+  margin-left: 50px;
+  border-radius: 20px;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.blog_box h1{
+  color: white;
+}
+
+.blog_box p{
+  visibility: hidden;
+  display: none;
+}
+.blog_box a{
+  text-decoration: none;
+}
+
+.blog_box:hover .pa{
+  color: black;
+  font-size: 8px;
+  visibility: visible;
+  display: inline-block;
+}
+.blog_box:hover h1{
+  font-size: 19px;
+  color: red;
+}
+.blog_box:hover{
+  background-color: #fac8f4c2;
+}
+footer{
+  float: right;
+}
+/*For screens*/
+/* small devices (phones, 600px and down) */
+@media only screen and (min-width:15px) and (max-width: 499px) {
+  .nav_bar_list{
+      display: none;
+  }
+
+  .Exp_box{
+    margin-left: 0%;
+    width: 400px;
+  }
+  .About{
+    height: 75vh;
+    width: inherit;
+    margin-top:80px;
+    padding-top: 20px;
+    justify-content: center;
+  }
+  .About img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .rpap_box{
+    margin-left: 25px;
+    width: 300px;
+  }
+  .im2 img{
+    float: none;
+    width: 150px;
+    height: 120px;
+  }.im1 img{
+    float: none;
+    width: 150px;
+    height: 120px;
+  }.im3 img{
+    float: none;
+    width: 150px;
+    height: 120px;
+  }
+  .img_section{
+    width: 160px;
+    height: 400px;
+    background-color: black;
+    margin-left: 20%;
+  }
+  .hob_box{
+    width: 100%;
+    height: 93%;
+  }
+  .blog_box{
+    width: 300px;
+    height:250px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) and (max-width:800px) {
+body{
+  font-size: 15px;
+}
+  .Exp h1{
+    padding: 40px;
+  }
+
+  .Exp_box{
+    margin-left: 5%;
+  }
+  .Exp_box:hover{
+    width: 85%;
+    height:85%;
+    background-color: pink  ;
+  }
+  .nav_bar_list{
+    display: none;
+  }
+  .hob{
+      font-size: 15px;
+      display: block;
+      height:65vh;
+      padding: 40px 40px 40px 0px;
+  }
+  .About img{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .rpap{
+    margin-bottom: 120%;
+    margin-left: 50px;
+  }
+  .blog_box{
+    width: 400px;
+    height:200px;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+  }
+  .hob_box{
+    width: 100%;
+    height: 80%;
+  }
+  .img_section{
+    width: 300px;
+    height: 215px;
+    margin-left: 20%;
+  }.im1 img{
+    width:299px;
+    height: 100px;
+  }
+  .im2 img{
+    width:148px;
+    height: 100px;
+
+  }.im3 img{
+    width:148px;
+    height: 100px;
+  }
+  .rpap{
+    margin-bottom: 200%;
+  }
+}
+
+/* Medium devices (landscape tablets, 800px and up to 992px) */
+@media only screen and (min-width: 800px) and (max-width:992px){
+  .nav_bar_list{
+      font-size: 15px;
+      display: block;
+  }
+  .rpap{
+    margin-bottom: 120%;
+    margin-left: 160px;
+  }
+  .Exp h1{
+    padding-top: 50%;
+  }
+  .img_section{
+    margin-left: 5%;
+  }
+  .blog_box{
+    width: 400px;
+    height:200px;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 5px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up to 1300px) */
+@media only screen and (min-width: 992px) and (max-width:1290px){
+  .nav_bar_list{
+    display: block;
+  }
+  .rpap{
+    margin-bottom: 500px;
+  }
+  .img_section{
+    margin-left: 20%;
+  }
+  .blog_box{
+    width: 400px;
+    height:250px;
+    margin-top: 80px;
+    margin-left: 40px;
+    padding: 5px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+/*originally designed for extra large screen devices*/
+.nav_bar_list{
+  display: block;
+}
+.rpap{
+  margin-bottom: 200px;
+}
+.img_section{
+  margin-left: 80%;
+  margin-left: 100px;
+}
+}
